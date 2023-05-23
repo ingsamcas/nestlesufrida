@@ -15,5 +15,6 @@
     <color name="colorText">#000000</color>
     <color name="colorTelsonHead">#8b8b8b</color>
     <color name="colorButton">#E0E0E0</color>
+    <color name="supportBackgroundDescription">#F6F7FB</color>
 
 </resources>

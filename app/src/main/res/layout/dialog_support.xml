@@ -4,42 +4,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingHorizontal="8dp"
-    android:paddingVertical="8dp"
- >
+    android:layout_height="match_parent">
+
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvSupportTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/support"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDescription"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@id/tvSupportTitle"
+        android:background="@color/supportBackgroundDescription"
+        >
+
+        <TextView
+            android:id="@+id/tvSupportSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/support_subtitle"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/clDescription"
+            app:layout_constraintStart_toStartOf="@id/clDescription"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvSupportDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/support_description"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/clDescription"
+            app:layout_constraintStart_toStartOf="@id/clDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvSupportSubtitle" />
+
+        <TextView
+            android:id="@+id/tvCommunicate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/support_comunicate"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="@id/clDescription"
+            app:layout_constraintStart_toStartOf="@id/clDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvSupportDescription" />
+
+        <Button
+            android:id="@+id/btnSupportNo"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/no"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnSupportYes"
+            app:layout_constraintStart_toStartOf="@id/clDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvCommunicate" />
+
+        <Button
+            android:id="@+id/btnSupportYes"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/yes"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@id/clDescription"
+            app:layout_constraintStart_toEndOf="@+id/btnSupportNo"
+            app:layout_constraintTop_toBottomOf="@+id/tvCommunicate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

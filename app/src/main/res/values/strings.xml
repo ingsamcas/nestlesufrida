@@ -15,11 +15,11 @@
     <string name="support">SOPORTE</string>
 
 
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="privacy_politics">Clausula Primera.- El presente Aviso Privacidad (en adelante, el "Aviso") establece los Términos y Condiciones respecto al uso de la plataforma tecnológica integrada por dispositivo móvil de captura, aplicativo móvil, mapa de tracking, administrador y business intelligence, en lo sucesivo la "Plataforma”, misma que Go Sharp pone a disposición de los usuarios finales. La misma contiene la información señalada en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares en sus artículos 8, 15, 16, 17, fracción II, 33, y 36; además de lo señalado en su correspondiente, su correspondiente Reglamento en los artículos 14, 24, 26, 27, 28, 30, 40, 41, 42, 68, 90 y 102, y cumpliendo con los requisitos señalados en los Lineamientos del Aviso de Privacidad, más específicamente en los lineamientos Décimo, Decimoctavo, Vigésimo, Vigésimo primero, Vigésimo segundo, Vigésimo tercero, Vigésimo cuarto, Vigésimo quinto, Vigésimo sexto, Vigésimo séptimo, Vigésimo octavo, Vigésimo noveno, Trigésimo, Trigésimo primero, Trigésimo segundo, Trigésimo tercero, Trigésimo séptimo y Cuadragésimo primero.
+    <string name="privacy_politics">
+        Clausula Primera.- El presente Aviso Privacidad (en adelante, el "Aviso") establece los Términos y Condiciones respecto al uso de la plataforma tecnológica integrada por dispositivo móvil de captura, aplicativo móvil, mapa de tracking, administrador y business intelligence, en lo sucesivo la "Plataforma”, misma que Go Sharp pone a disposición de los usuarios finales. La misma contiene la información señalada en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares en sus artículos 8, 15, 16, 17, fracción II, 33, y 36; además de lo señalado en su correspondiente, su correspondiente Reglamento en los artículos 14, 24, 26, 27, 28, 30, 40, 41, 42, 68, 90 y 102, y cumpliendo con los requisitos señalados en los Lineamientos del Aviso de Privacidad, más específicamente en los lineamientos Décimo, Decimoctavo, Vigésimo, Vigésimo primero, Vigésimo segundo, Vigésimo tercero, Vigésimo cuarto, Vigésimo quinto, Vigésimo sexto, Vigésimo séptimo, Vigésimo octavo, Vigésimo noveno, Trigésimo, Trigésimo primero, Trigésimo segundo, Trigésimo tercero, Trigésimo séptimo y Cuadragésimo primero.
 
 Clausula Segunda.- Las publicaciones digitales de Go Sharp en la plataforma, tienen por objeto facilitar a sus clientes el acceso a los servicios y productos de esta, así como a la información relativa a dichos servicios, productos, y cualquier otra información relacionada (en adelante los "Servicios y Productos").
 
@@ -143,5 +143,22 @@ Contact Us
 
 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
     </string>
+
+    <string name="support_subtitle">
+        ¿Desea recibir ayuda de soporte?
+    </string>
+
+    <string name="support_description">
+        Servicio disponible de 07:00 AM a 04:00 PM de lunes a viernes. El Sábado de 07:00 AM a 04:00 PM.
+    </string>
+
+    <string name="support_comunicate">
+        Comunicarse al número
+    </string>
+
+    <string name="support_number">55 2271 9121</string>
+
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
 
 </resources>
