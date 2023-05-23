@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="30dp"
     android:paddingVertical="20dp"
-    tools:context=".SecondFragment">
+    tools:context=".SupportFragment">
 
     <ScrollView
         android:layout_width="0dp"
@@ -36,14 +36,13 @@
                 app:layout_constraintTop_toTopOf="@id/clChild" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
-
     <Button
         android:id="@+id/button_second"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="@string/previous"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

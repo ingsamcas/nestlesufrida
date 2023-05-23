@@ -10,10 +10,12 @@
         android:name="net.gshp.nestlesufrida.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
-
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SupportFragment"
+            app:destination="@id/SupportFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +25,14 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SupportFragment"
+        android:name="net.gshp.nestlesufrida.SupportFragment"
+        tools:layout="@layout/fragment_support">
+        <action
+            android:id="@+id/action_SupportFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
