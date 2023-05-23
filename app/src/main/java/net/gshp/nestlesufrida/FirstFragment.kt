@@ -76,8 +76,8 @@ class FirstFragment : Fragment() {
 
         binding.buttonLogin.setOnClickListener() {
 
-            val etUser = binding.etUser.text.toString()
-            val etPass = binding.etPass.text.toString()
+            val etUser = binding.etUser.editText?.text?.toString() ?: ""
+            val etPass = binding.etPass.editText?.text?.toString() ?: ""
 
             Snackbar.make(
                 view,
