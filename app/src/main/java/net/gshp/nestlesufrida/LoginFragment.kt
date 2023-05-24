@@ -13,19 +13,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import net.gshp.nestlesufrida.databinding.FragmentFirstBinding
+import net.gshp.nestlesufrida.databinding.FragmentLoginBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class LoginFragment() : Fragment() {
 
-    private var _binding: FragmentFirstBinding? = null
+    private lateinit var binding: FragmentLoginBinding
     private lateinit var supportNumber: String
 
     private val requestPermissionLauncher =
@@ -33,26 +34,19 @@ class FirstFragment : Fragment() {
             ActivityResultContracts.RequestPermission()
         ) { isGranted: Boolean ->
             if (isGranted) {
-                Log.i("Permisssion", "Permiso aceptado")
                 makeCall()
             } else {
-                Log.i("Permisssion", "Permiso rechazado")
-                // Explain to the user that the feature is unavailable because the
-                // feature requires a permission that the user has denied. At the
-                // same time, respect the user's decision. Don't link to system
-                // settings in an effort to convince the user to change their
-                // decision.
+                Toast.makeText(context, getString(R.string.permissions_request_required), Toast.LENGTH_LONG).show()
             }
         }
 
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -71,7 +65,7 @@ class FirstFragment : Fragment() {
 
     private fun initListeners(view: View) {
         binding.tvTerms.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_LoginFragment_to_TermsFragment)
         }
 
         binding.buttonLogin.setOnClickListener() {
@@ -137,15 +131,9 @@ class FirstFragment : Fragment() {
                 requestPermissionLauncher.launch(android.Manifest.permission.CALL_PHONE)
             }
             else -> {
-                //Permiso no ha sido pedido
                 requestPermissionLauncher.launch(android.Manifest.permission.CALL_PHONE)
             }
         }
     }
 
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

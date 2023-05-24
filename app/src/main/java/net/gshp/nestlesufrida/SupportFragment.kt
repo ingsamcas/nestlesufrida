@@ -28,7 +28,7 @@ class SupportFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSupport.setOnClickListener(){
-            findNavController().navigate(R.id.action_SupportFragment_to_FirstFragment)
+            findNavController().navigate(R.id.action_SupportFragment_to_LoginFragment)
 
         }
     }

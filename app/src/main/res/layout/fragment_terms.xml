@@ -16,29 +16,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue_to_login_screen"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-243dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clChild"
+            android:id="@+id/cl_terms_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textview_second"
+                android:id="@+id/tv_terms_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="@string/privacy_politics"
-                app:layout_constraintEnd_toEndOf="@id/clChild"
-                app:layout_constraintStart_toStartOf="@id/clChild"
-                app:layout_constraintTop_toTopOf="@id/clChild" />
+                app:layout_constraintEnd_toEndOf="@id/cl_terms_container"
+                app:layout_constraintStart_toStartOf="@id/cl_terms_container"
+                app:layout_constraintTop_toTopOf="@id/cl_terms_container" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/btn_continue_to_login_screen"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="@string/previous"
