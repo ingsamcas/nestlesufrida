@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="30dp"
     android:paddingVertical="20dp"
-    tools:context=".SupportFragment">
+    tools:context=".ui.view.SupportFragment">
 
     <ScrollView
         android:layout_width="0dp"

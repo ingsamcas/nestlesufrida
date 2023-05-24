@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="net.gshp.nestlesufrida.LoginFragment"
+        android:name="net.gshp.nestlesufrida.ui.view.LoginFragment"
         android:label="@string/login_fragment_label"
         tools:layout="@layout/fragment_login">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/TermsFragment"
-        android:name="net.gshp.nestlesufrida.TermsFragment"
+        android:name="net.gshp.nestlesufrida.ui.view.TermsFragment"
         android:label="@string/terms_fragment_label"
         tools:layout="@layout/fragment_terms">
 
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/SupportFragment"
-        android:name="net.gshp.nestlesufrida.SupportFragment"
+        android:name="net.gshp.nestlesufrida.ui.view.SupportFragment"
         tools:layout="@layout/fragment_support">
         <action
             android:id="@+id/action_SupportFragment_to_LoginFragment"

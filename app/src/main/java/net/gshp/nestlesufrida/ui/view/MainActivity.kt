@@ -1,10 +1,14 @@
-package net.gshp.nestlesufrida
+package net.gshp.nestlesufrida.ui.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import androidx.activity.viewModels
+import androidx.fragment.app.viewModels
+import net.gshp.nestlesufrida.R
 import net.gshp.nestlesufrida.databinding.ActivityMainBinding
+import net.gshp.nestlesufrida.ui.viewmodel.LoginViewModel
 
 class MainActivity : AppCompatActivity() {
 
